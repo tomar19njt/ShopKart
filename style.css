@@ -249,6 +249,11 @@ color: rgba(255, 255, 255, 1)
 .navbar li {
     float: left;
 }
+.Menu-bar ul li
+{
+    
+    list-style-type: none;
+}
 .Menu-bar ul li a{
     color: #FFFFFF;
     border-bottom: none;
