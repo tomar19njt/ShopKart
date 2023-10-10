@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family="Poppins":wght@400;500;600&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;800&display=swap');
-
 *{
     margin: 0px;
     padding: 0px;
@@ -199,7 +198,7 @@ line-height: 60px;
     left: 1200px;
     border: 1px;
 /* //styleName: Body text 14; */
-    font-family: "Work Sans";
+    font-family: 'Work Sans';
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
@@ -213,7 +212,7 @@ left: 1299px;
 border: 1px;
 
     /* //styleName: Body text 14; */
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 14px;
 font-weight: 400;
 }
@@ -243,26 +242,27 @@ color: rgba(255, 255, 255, 1)
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; 
+    
 }
 
 .navbar li {
     float: left;
-}
-.Menu-bar ul li
-{
     
-    list-style-type: none;
 }
 .Menu-bar ul li a{
     color: #FFFFFF;
     border-bottom: none;
     text-align: left;
     letter-spacing: 0em;
-    font-family: "Work Sans";
+    font-family: 'Work Sans';
     font-size: 18px;
     text-decoration: none;
-
+}
+.Menu-bar ul li
+{
+    
+    list-style-type: none;
 }
 #home {
     position: absolute;
@@ -272,6 +272,12 @@ top: 115px;
 left: 137px;
 font-weight: 400;
 line-height: 21px;
+font-family: 'Work Sans';
+font-size: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+
 }
 #about{
     position: absolute;
@@ -281,6 +287,11 @@ top: 115px;
 left: 314px;
 font-weight: 400;
 line-height: 21px;
+font-family: 'Work Sans';
+font-size: 18px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 #product {
     position: absolute;
@@ -289,6 +300,18 @@ line-height: 21px;
     top: 115px;
     left: 490px;
     }
+#p1, #p2, #p3, #p4{
+    width: 129px;
+    height: 28px;
+    /* top: 29px; */
+    font-family: 'Work Sans';
+font-size: 14px;
+font-weight: 300;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+    
+}
     .product-content{
         width: 159px;
     height: 123px;
@@ -303,6 +326,11 @@ top: 115px;
 left: 755px;
 font-weight: 400;
 line-height: 21px;
+font-family: 'Work Sans';
+font-size: 18px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 .dropdown {
     float: left;
@@ -458,7 +486,7 @@ color: rgba(255, 255, 255, 1)
     height: 16.2px;
     top: 614.9px;
     left: 1300px;
-    font-family: "Work Sans";
+    font-family: 'Work Sans';
 font-size: 14px;
 font-weight: 400;
 line-height: 16px;
@@ -471,7 +499,7 @@ text-align: left;
 height: 16.2px;
 top: 634.13px;
 left: 1300px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 14px;
 font-weight: 400;
 line-height: 16px;
@@ -494,7 +522,7 @@ color: #FFFFFF;
     width:Hug(103px);
 height: Hug (24px);
 top: 696px;
-/* left: 115px; */
+left: 115px;
 border: 1px solid #FFFFFF;
 gap: 3px;
 text-decoration: none;
@@ -573,7 +601,7 @@ rotate: 0deg;
 height: 21px;
 top: 999px;
 left: 91px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
@@ -599,7 +627,7 @@ text-align: left;
 height: 21px;
 top: 1094px;
 left: 91px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
@@ -611,7 +639,7 @@ text-align: left;
 height: 21px;
 top: 1138px;
 left: 91px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
@@ -633,7 +661,7 @@ color: #000000;
 .des{
     width: 303px;
 height: 49px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 14px;
 font-weight: 400;
 line-height: 16px;
@@ -680,13 +708,22 @@ top: 998px;
 left: 346px;
 align-items: center;
 }
-.box-content p {
+
+
+.box-content .text  {
+    position: absolute;
+    width: Hug (310px);
+    height: Hug (125px);
+    gap: 8px;
+   text-decoration: none;
+}
+.box-content .img-description {
+    /* position: absolute; */
     width: Hug (310px);
     height: Hug (125px);
     top: 1332px;
     left: 346px;
     gap: 8px;
-    
    text-decoration: none;
 }
 .show-arrow-2 {
@@ -694,7 +731,7 @@ align-items: center;
     width: 45px;
 height: 45px;
 top:1255px;
-left:589px;
+left:558px;
 background-color: #161615;
 }
 .show-arrow-3 {
@@ -702,7 +739,7 @@ background-color: #161615;
     width: 45px;
 height: 45px;
 top:1255px;
-left: 905px;
+left: 853px;
 background-color: #161615;
 
 }
@@ -711,31 +748,31 @@ background-color: #161615;
     width: 45px;
 height: 45px;
 top:1255px;
-left:1223px;
+left:1148px;
 background-color: #161615;
 
 }
 .box-1{
-    width: 23%;
+    width: 20%;
     padding-left: 61px;
     margin-top: 10px;
     padding: 10px;
 }
 .box-2{
-    width: 23%;
+    width: 20%;
     padding: 10px;
     
 }
 .box-3{
-    width: 23%;
+    width: 20%;
     padding: 10px;
 }
 .box-4{
-    width: 23%;
+    width: 20%;
     padding: 10px;
 }
 .box-5{
-    width: 5%;
+    width: 10%;
     padding: 10px;
 }
 .box-img:hover{
@@ -790,7 +827,7 @@ color: #FFFFFF80;
 height: 52px;
 top: 1661px;
 left: 103px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
@@ -804,7 +841,7 @@ color: #FFFFFF80;
     height: 30px;
     top: 1644px;
     left: 630px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
@@ -830,7 +867,7 @@ input {
 height: 30px;
 top: 1709px;
 left: 630px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
@@ -843,7 +880,7 @@ color: #FFFFFF80;
 height: 30px;
 top: 1778px;
 left: 630px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
@@ -883,7 +920,7 @@ cursor: pointer;
 height: 16px;
 cursor: pointer;
 left: 50px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 26px;
 font-weight: 400;
 line-height: 16px;
@@ -994,7 +1031,7 @@ color: rgba(255, 255, 255, 1);
   }
   
   .wrapper ul li a {
-    text-decoration: none;
+    
     font-size: 30px;
     font-weight: 500;
     padding: 5px 30px;
@@ -1326,12 +1363,13 @@ border: 1px;
 .see-text{
     width: 85px;
 height: 21px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
 letter-spacing: 0em;
 text-align: left;
+left: 115px;
 
 }
 
@@ -1408,7 +1446,7 @@ rotate: 0deg;
 height: 16px;
 top: 841px;
 left: 28px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 14px;
 font-weight: 400;
 line-height: 16px;
@@ -1436,7 +1474,7 @@ color: #000000;
 height: 16px;
 top: 841px;
 left: 219px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 14px;
 font-weight: 400;
 line-height: 16px;
@@ -1449,7 +1487,7 @@ color: #000000;
     height: 16px;
     top: 841px;
     left: 314px;   
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 14px;
 font-weight: 400;
 line-height: 16px;
@@ -1473,7 +1511,7 @@ text-align: left;
 .des{
     width: 303px;
     height: 49px;
-    font-family: "Work Sans";
+    font-family: 'Work Sans';
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
@@ -1603,7 +1641,7 @@ flex-direction: row;
 height: 52px;
 top: 1620px;
 left: 50px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
@@ -1616,7 +1654,7 @@ color: #FFFFFF80;
 height: 30px;
 top: 1673px;
 left: 29px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
@@ -1641,7 +1679,7 @@ input {
 height: 30px;
 top: 1728px;
 left: 29px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
@@ -1654,7 +1692,7 @@ text-align: left;
 height: 30px;
 top: 1787px;
 left: 29px;
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
@@ -1690,7 +1728,7 @@ cursor: pointer;
 height: 10px;
 /* top: 1923px;
 left: 301px; */
-font-family: "Work Sans";
+font-family: 'Work Sans';
 font-size: 14px;
 font-weight: 400;
 margin-left: -20px;
