@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        /* nev section */
+        .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    
+}
+
+.navbar li {
+    float: left;
+    
+}
+.Menu-bar ul li a{
+    color: #FFFFFF;
+    border-bottom: none;
+    text-align: left;
+    letter-spacing: 0em;
+    font-family: 'Work Sans';
+    font-size: 18px;
+    text-decoration: none;
+}
+.Menu-bar ul li
+{
+    
+    list-style-type: none;
+}
+#home {
+    position: absolute;
+    width: 71px;
+height: 28px;
+top: 115px;
+left: 137px;
+font-weight: 400;
+line-height: 21px;
+font-family: 'Work Sans';
+font-size: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+
+}
+#about{
+    position: absolute;
+    width: 70px;
+height: 28px;
+top: 115px;
+left: 314px;
+font-weight: 400;
+line-height: 21px;
+font-family: 'Work Sans';
+font-size: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#product {
+    position: absolute;
+    width: 159px;
+    height: 123px;
+    top: 115px;
+    left: 490px;
+    }
+#p1, #p2, #p3, #p4{
+    width: 129px;
+    height: 28px;
+    /* top: 29px; */
+    font-family: 'Work Sans';
+font-size: 14px;
+font-weight: 300;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+    
+}
+    .product-content{
+        width: 159px;
+    height: 123px;
+    top: 115px;
+    left: 490px;
+    }
+#contact{
+    position: absolute;
+    width: 118px;
+height: 28px;
+top: 115px;
+left: 755px;
+font-weight: 400;
+line-height: 21px;
+font-family: 'Work Sans';
+font-size: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .productbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+#peoduct:hover{
+    border: 1px solid rgb(182, 6, 182);
+}
+  
+  .product-content {
+    display: none;
+    color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .product-content a {
+    float: none;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown:hover .product-content {
+    display: block;
+    border: 2px solid rgb(182, 6, 182);
+    height: auto;
+  }
+  #home:hover{
+    border-bottom: 2px solid rgb(6, 139, 192);
+    width: auto;
+  }
+  #about:hover{
+    border-bottom: 2px solid rgb(6, 139, 192);
+    width: auto;
+  }
+  #contact:hover{
+    border-bottom: 2px solid rgb(6, 139, 192);
+    width: auto;
+  }  
+  .toggle-tbn{
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    /* color: white; */
+  } 
+  .toggle-tbn span{
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 8px;
+    /* color: white; */
+    background-color: #000;
+  }
+  
+  </style>
+</head>
+<body>
+    <div class="logo">
+        <p class="ShopKart">ShopKart</p>
+    </div>
+    <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="Menu-bar">
+        <ul id="navbar">
+        </ul>
+      </div>
+      <script>
+        const navbar = [
+        { name: 'HOME', id: 'home' },
+        { name: 'ABOUT', id: 'about' },
+        {
+          name: 'OUR PRODUCTS',
+          id: 'product',
+          child: [
+            { name: 'PRODUCT 1', id: 'p1' },
+            { name: 'PRODUCT 2', id: 'p2' },
+            { name: 'PRODUCT 3', id: 'p3' },
+            { name: 'PRODUCT 4', id: 'p4' },
+          ],
+        },
+        { name: 'CONTACT US', id: 'contact' },
+      ];
+    
+      const navbarList = document.getElementById('navbar');
+    
+      navbar.forEach(item => {
+        const li = document.createElement('li');
+        li.id = item.id;
+    
+        if (item.child) {
+          li.classList.add('dropdown');
+          const button = document.createElement('button');
+          button.className = 'productbtn';
+          button.textContent = item.name + ' ' + '\u25BE'; // Unicode for down arrow
+    
+          const dropdownContent = document.createElement('div');
+          dropdownContent.className = 'product-content';
+    
+          item.child.forEach(submenuItem => {
+            const submenuLink = document.createElement('a');
+            submenuLink.href = '#'; // You can set the actual URL
+            submenuLink.textContent = submenuItem.name;
+            dropdownContent.appendChild(submenuLink);
+          });
+    
+          li.appendChild(button);
+          li.appendChild(dropdownContent);
+        } else {
+          const anchor = document.createElement('a');
+          anchor.href = '#'; // You can set the actual URL
+          anchor.textContent = item.name;
+          li.appendChild(anchor);
+        }
+    
+        navbarList.appendChild(li);
+      });
+      function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+      </script>
+</body>
+</html>
